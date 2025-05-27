@@ -14,6 +14,8 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 app.use("/api/v1/users", require('./api/v1/user.routes'));
+app.use('/api/v1/articles', require('./api/v1/articles.routes'));
+app.use('/api/v1/categories', require('./api/v1/category.routes'));
 
 // app.get('/', (req, res) => {
 //     res.send({ Title: 'Hello World!' });
