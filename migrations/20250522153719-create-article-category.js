@@ -9,7 +9,7 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      articleId: {
+      ArticleId: {
         type: Sequelize.INTEGER,
         references: {
           model: {
@@ -18,7 +18,7 @@ module.exports = {
           }
         },
       },
-      categoryId: {
+      CategoryId: {
         type: Sequelize.INTEGER,
         references: {
           model: {
